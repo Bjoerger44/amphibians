@@ -1,2 +1,12 @@
-<h1>{{title}}</h1>
-<p>Welcome to {{title}}</p>
+<h1>Amphis FTW!</h1>
+
+<ul>
+  {{#each list}}
+    <li>
+      <a href="/{{this.id}}">{{this.name}}</a>
+      <img class="amphi__image" src="{{this.image_url}}" alt="froggy" />
+    </li>
+  {{/each}}
+</ul>
+
+<a href="/create">Create Amphibian</a>
